@@ -23,8 +23,9 @@ const modelConfig: ModelConfig = {
 const naturalLanguageToSQL = new NaturalLanguageToSQL(dbConfig, modelConfig);
 
 const inputs = [
-  "Tell me something interesting about  universe?",
-  "List the users details with address affected by landslide",
+  "List all users with claim status approved",
+  "How many users are there in user table",
+  "Write an email for me",
 ];
 
 inputs.forEach((input) => {

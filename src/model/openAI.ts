@@ -1,10 +1,10 @@
 import { ChatOpenAI } from "@langchain/openai";
 
-export interface ModelConfig {
+export type ModelConfig = {
   model: string;
   temperature: number;
   apiKey: string;
-}
+};
 
 export const createModel = (modelConfig: ModelConfig) => {
   return new ChatOpenAI({

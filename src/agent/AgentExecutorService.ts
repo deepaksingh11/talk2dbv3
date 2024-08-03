@@ -35,8 +35,8 @@ export class AgentExecutorService {
         Only use the below tools. Only use the information returned by the below tools to construct your final answer.
         You MUST double-check your query before executing it. If you get an error while executing a query, rewrite the query and try again.
         DO NOT make any DML statements (INSERT, UPDATE, DELETE, DROP etc.) to the database.
-        If the question does not seem related to the database, just return "I don't know" as the answer.
-        Ensure that the final response is detailed and in natural language, and does not include any special characters such as newlines.`,
+        Ensure that the final response is detailed and in natural language, and does not include any special characters such as newlines.
+        If the question does not seem related to the database, just return "I don't know" as the answer.`,
       ],
       ["human", "{input}"],
       new MessagesPlaceholder("agent_scratchpad"),
